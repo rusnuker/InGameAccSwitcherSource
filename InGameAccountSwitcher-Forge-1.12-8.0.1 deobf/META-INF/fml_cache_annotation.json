@@ -1,0 +1,433 @@
+{
+  "ru/vidtu/ias/Config": {
+    "name": "ru/vidtu/ias/Config",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "loadAccounts(Lcom/google/gson/JsonArray;I)Ljava/util/List;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "loadAccounts(Lcom/google/gson/JsonArray;I)Ljava/util/List;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "loadAccount(Ljava/lang/String;Lcom/google/gson/JsonObject;I)Lru/vidtu/ias/account/Account;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Nullable;",
+        "target": "loadAccount(Ljava/lang/String;Lcom/google/gson/JsonObject;I)Lru/vidtu/ias/account/Account;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "saveAccounts(Ljava/util/List;)Lcom/google/gson/JsonArray;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "saveAccounts(Ljava/util/List;)Lcom/google/gson/JsonArray;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "saveAccount(Lru/vidtu/ias/account/Account;)Lcom/google/gson/JsonObject;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Nullable;",
+        "target": "saveAccount(Lru/vidtu/ias/account/Account;)Lcom/google/gson/JsonObject;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/Config$Alignment": {
+    "name": "ru/vidtu/ias/Config$Alignment",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "key()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "key()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "getOr(Ljava/lang/String;Lru/vidtu/ias/Config$Alignment;)Lru/vidtu/ias/Config$Alignment;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "getOr(Ljava/lang/String;Lru/vidtu/ias/Config$Alignment;)Lru/vidtu/ias/Config$Alignment;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/Expression": {
+    "name": "ru/vidtu/ias/Expression",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "current()C",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "parseWidthHeight(Ljava/lang/String;II)D",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      }
+    ]
+  },
+  "ru/vidtu/ias/MicrosoftAuthCallback": {
+    "name": "ru/vidtu/ias/MicrosoftAuthCallback",
+    "interfaces": [
+      "java/io/Closeable"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "start(Ljava/util/function/BiConsumer;Ljava/lang/String;)Ljava/util/concurrent/CompletableFuture;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Nullable;",
+        "target": "auth(Ljava/util/function/BiConsumer;Ljava/lang/String;)Lru/vidtu/ias/account/MicrosoftAccount;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/account/Account": {
+    "name": "ru/vidtu/ias/account/Account",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "uuid()Ljava/util/UUID;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "name()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "login(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletableFuture;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/account/Account$AuthData": {
+    "name": "ru/vidtu/ias/account/Account$AuthData",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "name()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "name()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "uuid()Ljava/util/UUID;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "uuid()Ljava/util/UUID;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "accessToken()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "accessToken()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "userType()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "userType()Ljava/lang/String;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/account/Auth": {
+    "name": "ru/vidtu/ias/account/Auth",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "authXBL(Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "authMinecraft(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "resolveUUID(Ljava/lang/String;)Ljava/util/UUID;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/account/Auth$1": {
+    "name": "ru/vidtu/ias/account/Auth$1",
+    "interfaces": [
+      "javax/net/ssl/X509TrustManager"
+    ]
+  },
+  "ru/vidtu/ias/account/Auth$2": {
+    "name": "ru/vidtu/ias/account/Auth$2",
+    "interfaces": [
+      "javax/net/ssl/X509TrustManager"
+    ]
+  },
+  "ru/vidtu/ias/account/MicrosoftAccount": {
+    "name": "ru/vidtu/ias/account/MicrosoftAccount",
+    "interfaces": [
+      "ru/vidtu/ias/account/Account"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "uuid()Ljava/util/UUID;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "name()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "accessToken()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "accessToken()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/Contract;",
+        "target": "refreshToken()Ljava/lang/String;",
+        "values": {
+          "pure": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "login(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletableFuture;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/account/OfflineAccount": {
+    "name": "ru/vidtu/ias/account/OfflineAccount",
+    "interfaces": [
+      "ru/vidtu/ias/account/Account"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "uuid()Ljava/util/UUID;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "name()Ljava/lang/String;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "login(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletableFuture;"
+      }
+    ]
+  },
+  "ru/vidtu/ias/gui/IASGuiFactory": {
+    "name": "ru/vidtu/ias/gui/IASGuiFactory",
+    "interfaces": [
+      "net/minecraftforge/fml/client/IModGuiFactory"
+    ]
+  },
+  "ru/vidtu/ias/legacy/SkinLoader": {
+    "name": "ru/vidtu/ias/legacy/SkinLoader",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lorg/jetbrains/annotations/NotNull;",
+        "target": "loadSkin(Ljava/util/UUID;)Ljava/util/concurrent/CompletableFuture;"
+      }
+    ]
+  },
+  "the_fireplace/ias/IAS": {
+    "name": "the_fireplace/ias/IAS",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "the_fireplace/ias/IAS",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "1.12.2"
+          },
+          "clientSideOnly": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "guiFactory": {
+            "value": "ru.vidtu.ias.gui.IASGuiFactory"
+          },
+          "modid": {
+            "value": "ias"
+          },
+          "name": {
+            "value": "In-Game Account Switcher"
+          },
+          "updateJSON": {
+            "value": "https://github.com/The-Fireplace-Minecraft-Mods/In-Game-Account-Switcher/raw/main/updater-forge.json"
+          },
+          "useMetadata": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "version": {
+            "value": "D7.29 :P"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "onPreInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onScreenInit(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onScreenAction(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onScreenRender(Lnet/minecraftforge/client/event/GuiScreenEvent$DrawScreenEvent$Post;)V"
+      }
+    ]
+  },
+  "the_fireplace/ias/gui/AccountList$AccountEntry": {
+    "name": "the_fireplace/ias/gui/AccountList$AccountEntry",
+    "interfaces": [
+      "net/minecraft/client/gui/GuiListExtended$IGuiListEntry"
+    ]
+  },
+  "the_fireplace/ias/gui/AccountListScreen$1": {
+    "name": "the_fireplace/ias/gui/AccountListScreen$1",
+    "interfaces": [
+      "net/minecraft/client/gui/GuiPageButtonList$GuiResponder"
+    ]
+  }
+}
